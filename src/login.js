@@ -80,13 +80,17 @@ export class Login extends React.Component {
                             </View>
 
 
-                            <Text style={{
-                                textAlign: "right",
-                                color: "#ffffff",
-                                marginEnd: 20,
-                                marginTop: 8,
-                                fontWeight: "bold"
-                            }}> Forget Password?</Text>
+                            <TouchableOpacity activeOpacity={0.5} onPress={() => {
+                                this.props.navigation.navigate("ForgetPassword");
+                            }}>
+                                <Text style={{
+                                    textAlign: "right",
+                                    color: "#ffffff",
+                                    marginEnd: 20,
+                                    marginTop: 8,
+                                    fontWeight: "bold"
+                                }}> Forget Password?</Text>
+                            </TouchableOpacity>
                             <View style={{flex: 1, marginTop: 30, justifyContent: "space-around"}}>
                                 <TouchableOpacity activeOpacity={.5} style={{marginStart: 20, marginEnd: 20}}>
                                     <View style={{
