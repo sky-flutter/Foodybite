@@ -92,7 +92,10 @@ export class Login extends React.Component {
                                 }}> Forget Password?</Text>
                             </TouchableOpacity>
                             <View style={{flex: 1, marginTop: 30, justifyContent: "space-around"}}>
-                                <TouchableOpacity activeOpacity={.5} style={{marginStart: 20, marginEnd: 20}}>
+                                <TouchableOpacity activeOpacity={.5} style={{marginStart: 20, marginEnd: 20}}
+                                                  onPress={() => {
+                                                      this.props.navigation.navigate("TurnLocation");
+                                                  }}>
                                     <View style={{
                                         backgroundColor: "#5663FF",
                                         alignItems: "center",
